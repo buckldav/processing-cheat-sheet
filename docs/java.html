@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="stylesheet" type="text/css" href="vars.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="vars-java.css" media="all" />
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
     <link rel="stylesheet" href="prism.css" />
   </head>
@@ -19,7 +19,7 @@
     <article id="cheat-sheet">
       <div class="column">
         <header>
-          <h1 id="title">p5.js</h1>
+          <h1 id="title">Processing</h1>
           <p id="subtitle">
             a cheat sheet <br />
             for beginners!
@@ -28,13 +28,13 @@
 
         <section>
           <h1>program structure</h1>
-          <pre><code class="language-javaScript">//runs once when program starts
-function setup(){
-  createCanvas(800,600); //width,height in pixels
+          <pre><code class="language-java">//runs once when program starts
+void setup(){
+  size(800,600); //width,height in pixels
 }
 
 //run continuously after setup
-function draw(){
+void draw(){
   //rendering loop
 }
 </code></pre>
@@ -42,7 +42,7 @@ function draw(){
 
         <section>
           <h1>system variables</h1>
-          <pre><code class="language-javaScript">windowWidth / windowHeight
+          <pre><code class="language-java">windowWidth / windowHeight
 //width / height of window
 
 width / height
@@ -55,7 +55,7 @@ mouseX / mouseY
 
         <section>
           <h1>non-visual feedback</h1>
-          <pre><code class="language-javaScript">print();
+          <pre><code class="language-java">println();
 //report data to the output console
 
 //double slash to comment code (program skips it)
@@ -64,7 +64,7 @@ mouseX / mouseY
 
         <section>
           <h1>color</h1>
-          <pre><code class="language-javaScript">fill(120); //gray: 0-255
+          <pre><code class="language-java">fill(120); //gray: 0-255
 fill(100,125,255); //r, g, b: 0-255
 fill(255, 0, 0, 50); //r, g, b, alpha
 fill('red'); //color string
@@ -79,7 +79,7 @@ color(0, 0, 255); //p5.Color object
       <div class="column">
         <section>
           <h1>math</h1>
-          <pre><code class="language-javaScript">+ - / *  //basic math operators
+          <pre><code class="language-java">+ - / *  //basic math operators
 
 random(low,high); //ranged random number
 
@@ -91,7 +91,7 @@ map(value, in1, in2, out1, out2);
         <!-- CONSIDERING ADDING THIS HERE AND MOVING MATH TO THE BOTTOM OF COL 1, THOGUHTS? -->
         <!-- <section>
 			<h1>variable definition</h1>
-			<pre><code class="language-javaScript">//let & keyword defines a variable
+			<pre><code class="language-java">//let & keyword defines a variable
 // use single = to store data in the variable
 let variableName = 100;
 let myWords = "a string of text!";
@@ -101,7 +101,7 @@ let randStorage = random(0,255); // store returned data
 
         <section>
           <h1>2d primitives</h1>
-          <pre><code class="language-javaScript">line(x1, y1, x2, y2);
+          <pre><code class="language-java">line(x1, y1, x2, y2);
 
 ellipse(x, y, width, height);
 
@@ -151,7 +151,7 @@ text("string", x, y, boxwidth, boxheight);
       <div class="column">
         <section>
           <h1>attributes</h1>
-          <pre><code class="language-javaScript">background(color);
+          <pre><code class="language-java">background(color);
 //set the background color
 
 fill(color);
@@ -180,7 +180,7 @@ textSize(pixels);
         <section>
           <h1>if/then logic</h1>
           <div class="logic">
-            <pre><code class="language-javaScript">if(test){
+            <pre><code class="language-java">if(test){
   //statements
 }
 

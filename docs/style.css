@@ -1,235 +1,226 @@
 /* // CHANGE ALL THE FONTS TO USE EMS */
 
-
-@font-face{
-	font-family: "Fira Code";
-	font-weight: normal;
-	src: url("fonts/FiraCode-Regular.otf") format("truetype");
+@font-face {
+  font-family: "Fira Code";
+  font-weight: normal;
+  src: url("fonts/FiraCode-Regular.otf") format("truetype");
 }
 
-@font-face{
-	font-family: "Fira Code";
-	font-weight: light;
-	src: url("fonts/FiraCode-Light.otf") format("truetype");
+@font-face {
+  font-family: "Fira Code";
+  font-weight: light;
+  src: url("fonts/FiraCode-Light.otf") format("truetype");
 }
 
-@font-face{
-	font-family: "Fira Code";
-	font-weight: medium;
-	src: url("fonts/FiraCode-Medium.otf") format("truetype");
+@font-face {
+  font-family: "Fira Code";
+  font-weight: medium;
+  src: url("fonts/FiraCode-Medium.otf") format("truetype");
 }
 
-@font-face{
-	font-family: "Fira Code";
-	font-weight: bold;
-	src: url("fonts/FiraCode-Bold.otf") format("truetype");
+@font-face {
+  font-family: "Fira Code";
+  font-weight: bold;
+  src: url("fonts/FiraCode-Bold.otf") format("truetype");
 }
 
-*{
-	color-adjust: exact;
-	-webkit-print-color-adjust: exact;
-	box-sizing: inherit;
+* {
+  color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+  box-sizing: inherit;
 }
 
-body,html{
-	padding: 2vw 1vw 0vw 1vw;
-	margin: 0;
-	font-family: "Fira Code", monospace;
-	font-size: 0.85vw;
-	box-sizing: border-box;
+body,
+html {
+  padding: 2vw 1vw 0vw 1vw;
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  font-size: 0.85vw;
+  box-sizing: border-box;
 }
 
-a{
-	color:#ed225d;
+a {
+  color: var(--color);
 }
-a:hover{
-	color: #545454;
-}
-
-h1, h2{
-	color: #ed225d;
-	font-size: 1.2em;
-	margin:0.5vh;
-	white-space: nowrap;
+a:hover {
+  color: #545454;
 }
 
-footer{
-	font-size: 0.75em;
-	text-align: right;
-	margin-top:0.5vh;
-
+h1,
+h2 {
+  color: var(--color);
+  font-size: 1.2em;
+  margin: 0.5vh;
+  white-space: nowrap;
 }
 
-#subtitle{
-	text-align: center;
+footer {
+  font-size: 0.75em;
+  text-align: right;
+  margin-top: 0.5vh;
 }
 
-
-nav#page-header{
-	position: fixed;
-	width: 100%;
-	left: 0;
-	top: 0;
-	z-index:9999;
+#subtitle {
+  text-align: center;
 }
 
-nav#page-header #language-selection{
-	position:absolute;
-	right:0;
-	display: flex;
-	list-style: none;
-	padding: 1vh;
-	background-color:#fafafa;
-	justify-content: space-around;
-	width:33vw;
-
+nav#page-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9999;
 }
 
-#cheat-sheet{
-	display: grid;
-	align-items: start;
-	grid-template-columns: repeat(3,1fr);
-	grid-gap: 2vw;
+nav#page-header #language-selection {
+  position: absolute;
+  right: 0;
+  display: flex;
+  list-style: none;
+  padding: 1vh;
+  background-color: #fafafa;
+  justify-content: space-around;
+  width: 33vw;
 }
 
-
-#cheat-sheet  pre{
-	background: #fafafa;
-	white-space: pre-wrap;
-	overflow: inherit;
+#cheat-sheet {
+  display: grid;
+  align-items: start;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2vw;
 }
 
-
-#cheat-sheet #title{
-	font-size: 2.25em;
-	width:50%;
+#cheat-sheet pre {
+  background: #fafafa;
+  white-space: pre-wrap;
+  overflow: inherit;
 }
 
-#cheat-sheet header{
-	display:flex;
-	justify-content: center;
-	align-items: center;
+#cheat-sheet #title {
+  font-size: 2.25em;
+  width: 50%;
 }
 
-#cheat-sheet #subtitle{
-	padding: 0.5vw;
-	background: #ed225d;
-	color: #FFF;
-	width:50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#cheat-sheet header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#cheat-sheet ul{
-	padding: 0;
-	list-style: none;
-	/* background-color:#fafafa; */
-
+#cheat-sheet #subtitle {
+  padding: 0.5vw;
+  background: var(--color);
+  color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#cheat-sheet .canvas-container{
-	display: inline-block;
-
+#cheat-sheet ul {
+  padding: 0;
+  list-style: none;
+  /* background-color:#fafafa; */
 }
 
-div.column section ul{
-	display:grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: repeat(2,1fr)
-	align-content:center;
-	justify-content: center;
-
+#cheat-sheet .canvas-container {
+  display: inline-block;
 }
 
-.canvas-container div{
-	display: flex;
-	justify-content: center;
+div.column section ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-content: center;
+  justify-content: center;
+}
+
+.canvas-container div {
+  display: flex;
+  justify-content: center;
 }
 
 .canvas-container div canvas {
-	width:87.5% !important;
-	height:87.5% !important;
+  width: 87.5% !important;
+  height: 87.5% !important;
 }
 
-.logic{
-	display:grid;
-	grid-template-columns: 3fr 2fr;
-	/* display: flex; */
-	background-color:#fafafa;
+.logic {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  /* display: flex; */
+  background-color: #fafafa;
 }
 
-
-#ifelse-canvas .p5Canvas{
-	width:100% !important;
-	height:100% !important;
- }
+#ifelse-canvas .p5Canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
 
 /* There might need to be another break size to 2 col or something? */
 
 /*  MOBILE – SMALL-TABLET & PHONE */
- @media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    font-size: 3vw;
+    margin-top: 1.5vh;
+  }
 
-	 body,html{
-		font-size: 3vw;
-		margin-top: 1.5vh;
-	 }
+  #cheat-sheet {
+    grid-template-columns: 1fr;
+  }
 
-	 #cheat-sheet{
-	 	grid-template-columns: 1fr;
-	 }
-
-	 nav#page-header #language-selection{
-	 	position:relative;
-	 	left:0;
-	 	width:100%;
-		font-size: 0.75em;
-	 }
-
- }
-
-/* PRINT – LANDSCAPE ORIENTATION IS FAVORED! */
- @media print{
- 	@page{
- 		size: landscape;
- 	}
-
-	body,html{
-		padding: 0px;
-		font-size: 1.25vw;
-	}
-
-/* special for printing the JA, ZH since the characters take more vertical space */
-	#ja , #zh{
-		font-size: 1.0vw;
-	}
-
- 	nav#page-header{
-		display:none;
-	}
-
-	.logic{
-		display:grid;
-		grid-template-columns: 1fr;
-		/* display: flex; */
-	}
-
-	#ifelse-canvas{
-		display: flex;
-		justify-content: center;
-	}
-
-	#ifelse-canvas .p5Canvas{
-		width:50% !important;
-	 }
-
-	footer{
-	 font-size: 0.5em;
-	}
-
+  nav#page-header #language-selection {
+    position: relative;
+    left: 0;
+    width: 100%;
+    font-size: 0.75em;
+  }
 }
 
+/* PRINT – LANDSCAPE ORIENTATION IS FAVORED! */
+@media print {
+  @page {
+    size: landscape;
+  }
 
- /* @media print and (orientation: portrait){
+  body,
+  html {
+    padding: 0px;
+    font-size: 1.25vw;
+  }
+
+  /* special for printing the JA, ZH since the characters take more vertical space */
+  #ja,
+  #zh {
+    font-size: 1vw;
+  }
+
+  nav#page-header {
+    display: none;
+  }
+
+  .logic {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex; */
+  }
+
+  #ifelse-canvas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ifelse-canvas .p5Canvas {
+    width: 50% !important;
+  }
+
+  footer {
+    font-size: 0.5em;
+  }
+}
+
+/* @media print and (orientation: portrait){
 
  } */
